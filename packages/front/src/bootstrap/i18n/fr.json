@@ -1,0 +1,6 @@
+{
+  "app": {
+    "welcome": "Bonjour bienvenue sur le projet base node react",
+    "404notFound": "404 page introuvable"
+  }
+}

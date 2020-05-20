@@ -1,0 +1,47 @@
+{
+  "name": "popchef-test-common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Guillaume NOUGIER",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "build.watch": "tsc -w",
+    "tsc.check": "tsc --noEmit",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.7",
+    "ts-jest": "^25.2.0"
+  },
+  "dependencies": {
+    "typescript": "^3.9.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/*.spec.ts"
+    ],
+    "preset": "ts-jest",
+    "modulePaths": [
+      "<rootDir>/src"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "npm run tslint.check",
+      "npm run prettier.fix"
+    ]
+  }
+}

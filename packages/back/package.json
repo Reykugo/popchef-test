@@ -1,0 +1,41 @@
+{
+  "name": "popchef-test-back",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc",
+    "start.watch": "tsc -w",
+    "start.prod": "node dist/back/src/server.js",
+    "test": "NODE_ENV=test jest"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/jest": "^24.0.18",
+    "@types/supertest": "^2.0.8",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.3.1"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/express": "^4.16.1",
+    "@types/sqlite3": "^3.1.5",
+    "body-parser": "^1.19.0",
+    "common-project": "../common",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-validator": "^6.2.0",
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "cli": "dist/back/src/cli",
+    "business": "dist/back/src/business",
+    "technical": "dist/back/src/technical",
+    "bootstrap": "dist/back/src/bootstrap",
+    "common-project": "dist/common"
+  }
+}
