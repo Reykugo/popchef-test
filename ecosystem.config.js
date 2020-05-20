@@ -1,0 +1,50 @@
+/* eslint-disable @typescript-eslint/camelcase */
+module.exports = {
+  apps: [
+    {
+      name: 'API - Watch',
+      cwd: './packages/back',
+      script: '../../scripts/start_watch.sh',
+      args: 'run start.watch',
+      interpreter: 'bash',
+      instances: 1,
+      autorestart: true,
+      max_memory_restart: '1G',
+    },
+    {
+      name: 'API',
+      cwd: './packages/back',
+      script: 'dist/back/src/server.js',
+      instances: 1,
+      autorestart: true,
+      watch: ['dist'],
+      node_args: ['--inspect=5858'],
+      max_memory_restart: '1G',
+    },
+    {
+      name: 'Front',
+      cwd: 'packages/front',
+      script: 'npm',
+      args: ['start'],
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: '1G',
+      env: {
+        NODE_ENV: 'development',
+        REACT_APP_API_URL: 'http://localhost:8080',
+        SKIP_PREFLIGHT_CHECK: 'true',
+      },
+    },
+    {
+      name: 'Common',
+      cwd: 'packages/common',
+      script: '../../scripts/start_watch.sh',
+      interpreter: 'bash',
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: '1G',
+    },
+  ],
+};

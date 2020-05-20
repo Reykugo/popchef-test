@@ -1,0 +1,17 @@
+stages:
+  - lint
+  - tests
+
+eslint:
+  image: node:10
+  stage: lint
+  script:
+    - make install
+    - npm run lint.check
+
+tests:
+  image: node:10
+  stage: tests
+  script:
+    - make install
+    - make test

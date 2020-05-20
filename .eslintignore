@@ -1,0 +1,12 @@
+# Dependencies
+node_modules
+
+# Default service worker
+packages/front/src/serviceWorker.ts
+
+# Default typescript env file
+packages/front/src/react-app-env.d.ts
+
+#build
+packages/common/dist
+packages/back/dist
