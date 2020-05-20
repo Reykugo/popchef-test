@@ -1,0 +1,9 @@
+@import 'ui/styles/index.module.scss';
+
+.emptyList {
+  color: $color-black;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}

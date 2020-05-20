@@ -1,6 +1,6 @@
-# Base node react project
+# Popchef test
 
-This project contains the skeleton for the base node react project.
+This project contains the test for popchef.
 
 ## Dependencies
 
@@ -23,3 +23,9 @@ make start
 API starts at http://localhost:8080
 
 Front starts at http://localhost:3000
+
+## Init Fixtures for dev
+
+```
+make db.fixtures
+```

@@ -1,0 +1,15 @@
+@import './variables.module.scss';
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCentered {
+  align-items: center;
+  justify-content: center;
+}

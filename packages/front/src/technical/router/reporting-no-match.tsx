@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import NoMatch from 'business/pages/no-match';
 import { Route } from 'react-router-dom';
 

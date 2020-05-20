@@ -2,5 +2,8 @@
   "app": {
     "welcome": "Hello welcome to base node react project",
     "404notFound": "404 page not found"
+  },
+  "articles": {
+    "noArticles": "No articles availabes"
   }
 }

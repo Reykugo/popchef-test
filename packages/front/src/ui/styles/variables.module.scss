@@ -1,0 +1,14 @@
+$page-background: rgb(226, 226, 226);
+$gutter-size: 1300px;
+
+$color-white: white;
+$color-black: black;
+$color-lightGrey: rgb(204, 198, 198);
+
+:export {
+  pageBackground: $page-background;
+  gutterSize: $gutter-size;
+  colorWhite: $color-white;
+  colorBlack: $color-black;
+  colorLightGrey: $color-lightGrey;
+}

@@ -1,0 +1,44 @@
+@import 'ui/styles/index.module.scss';
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  height: 450px;
+  background-color: $color-white;
+  cursor: pointer;
+  &:hover {
+    margin-top: -2px;
+  }
+}
+
+.imageContainer {
+  background-color: $color-lightGrey;
+}
+
+.imageContainer,
+.infoContainer {
+  width: 100%;
+  flex: 1;
+  max-height: 50%;
+}
+
+.infoContainer {
+  color: $color-black;
+  justify-content: flex-start;
+  span {
+    width: 100%;
+    text-align: center;
+  }
+  .label {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .text {
+    font-weight: bold;
+    font-size: 14px;
+    color: $color-lightGrey;
+  }
+}
