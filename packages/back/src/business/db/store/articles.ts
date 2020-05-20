@@ -17,8 +17,11 @@ export const addArticle = async (
   return dbGetArticle(resultId);
 };
 
-export const updateArticle = async (data: ArticleResponse) => {
-  const resultId = await dbUpdateArticle(data.id, { ...data });
+export const updateArticle = async (
+  id: ArticleResponse['id'],
+  data: ArticleResponse,
+) => {
+  const resultId = await dbUpdateArticle(id, { ...data, date: new Date() });
   return dbGetArticle(resultId);
 };
 
