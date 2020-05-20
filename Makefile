@@ -34,3 +34,9 @@ test:
 	cd packages/common && npm run test
 	cd packages/back && npm run test
 	cd packages/front && npm run test
+
+db.clean:
+	cd packages/back && npm run db.clean
+
+db.fixtures: db.clean
+	cd packages/back && npm run db.fixtures
