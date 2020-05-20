@@ -1,10 +1,27 @@
+import ArticleList from 'business/articles-list';
+import classnames from 'classnames';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Gutter } from 'ui/layout/gutter';
+import Page from 'ui/layout/pages';
+import variables from 'ui/styles/variables.module.scss';
 import styles from './index.module.scss';
 
 const HomePage: React.FC = () => {
-  const { t } = useTranslation();
-  return <div className={styles.container}>{t('app.welcome')}</div>;
+  return (
+    <Page>
+      <Gutter maxWidth={variables.gutterSize}>
+        <div
+          className={classnames(
+            styles.flexColumn,
+            styles.flexCentered,
+            styles.container,
+          )}
+        >
+          <ArticleList />
+        </div>
+      </Gutter>
+    </Page>
+  );
 };
 
 export default HomePage;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Router as ReactRouterDom } from 'react-router-dom';
 import { SwitchNotFoundHandler } from 'technical/router';
 import history from 'technical/history';
-import HomePage from 'business/pages/no-match';
+import HomePage from 'business/pages/homepage';
 
 export enum Routes {
   App = '/',

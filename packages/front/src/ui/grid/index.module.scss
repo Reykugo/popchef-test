@@ -1,0 +1,8 @@
+@import 'ui/styles/index.module.scss';
+
+.gridContainer {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  height: min-content;
+}

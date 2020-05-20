@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "common-project": "../common",
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -12,13 +13,16 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.0",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "common-project": "../common",
     "history": "^4.10.1",
     "i18next": "^19.4.4",
     "i18next-browser-languagedetector": "^4.1.1",
-    "react-i18next": "^11.4.0",
     "node-sass": "^4.12.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-i18next": "^11.4.0",
     "react-router-dom": "^5.1.0",
     "react-scripts": "3.4.1",
     "typescript": "^3.7.5"
@@ -46,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.10",
     "cypress": "^3.4.1"
   }
 }
