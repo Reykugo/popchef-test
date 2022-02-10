@@ -19,7 +19,7 @@
     "history": "^4.10.1",
     "i18next": "^19.4.4",
     "i18next-browser-languagedetector": "^4.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.4.0",
